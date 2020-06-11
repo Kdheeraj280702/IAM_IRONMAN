@@ -43,7 +43,7 @@ class MyApp extends StatelessWidget {
           backgroundColor: Colors.blue[400],
           currentIndex: 0,
           selectedFontSize: 19,
-          selectedItemColor: Colors.red,
+          selectedItemColor: Colors.white,
         ),
         drawer: Drawer(
           child: ListView(
