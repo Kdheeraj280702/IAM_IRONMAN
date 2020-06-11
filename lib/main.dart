@@ -1,5 +1,6 @@
 import 'dart:ui';
 
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(MyApp());
@@ -110,9 +111,31 @@ class MyApp extends StatelessWidget {
           ),
         ),
         backgroundColor: Colors.white,
-        body: Center(
-          child: Image.asset("images/1.jpg"),
+        body: Column(
+          children: <Widget>[
+            SizedBox(height:40,),
+            Container(
+
+
+              child: Text(
+                "Iam...IRONMAN",
+                style: TextStyle(
+                  fontStyle: FontStyle.italic,
+                  fontWeight: FontWeight.bold,
+                  letterSpacing: 3,
+                  fontSize: 30,
+                  color: Colors.teal,
+                ),
+              ),
+            ),
+            SizedBox(height: 90),
+            Center(
+              child: Image.asset("images/1.jpg"),
+            ),
+          ],
+
         ),
+
       ),
     );
   }
