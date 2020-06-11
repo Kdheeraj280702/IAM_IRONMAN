@@ -11,6 +11,14 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
+          actions: <Widget>[
+            Icon(
+              Icons.add_a_photo,
+            ),
+            SizedBox(
+              width: 20,
+            )
+          ],
           backgroundColor: Colors.red[500],
           title: Text(
             "IAM RICH",
@@ -21,12 +29,13 @@ class MyApp extends StatelessWidget {
           ),
         ),
         floatingActionButton: FloatingActionButton(
-          backgroundColor: Colors.red[500],
-          child: Icon(
-            Icons.accessibility,
-          ),
-          onPressed: () {},
-        ),
+            backgroundColor: Colors.white,
+            child: Icon(
+              Icons.accessibility,
+              color: Colors.red[700],
+              size: 30,
+            ),
+            onPressed: () {}),
         floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
         bottomNavigationBar: BottomNavigationBar(
           items: [
@@ -54,7 +63,7 @@ class MyApp extends StatelessWidget {
               DrawerHeader(
                 child: Center(
                   child: Text(
-                    "HEADER",
+                    "E.D.I.T.H",
                     style: TextStyle(
                       fontSize: 40,
                       color: Colors.white,
@@ -71,16 +80,17 @@ class MyApp extends StatelessWidget {
                   children: <Widget>[
                     Icon(
                       Icons.phone,
-                      color: Colors.blue,
+                      color: Colors.red[700],
                     ),
                     SizedBox(
                       width: 20,
                     ),
                     Text(
-                      "1st one",
+                      "Sorry cant Call IRONMAN",
                       style: TextStyle(
                         fontSize: 20,
-                        color: Colors.blue,
+                        color: Colors.red[700],
+                        fontWeight: FontWeight.bold,
                       ),
                     ),
                   ],
@@ -92,16 +102,17 @@ class MyApp extends StatelessWidget {
                   children: <Widget>[
                     Icon(
                       Icons.phone,
-                      color: Colors.blue,
+                      color: Colors.red[700],
                     ),
                     SizedBox(
                       width: 20,
                     ),
                     Text(
-                      "2nd one",
+                      "Click to dial JARVIS",
                       style: TextStyle(
                         fontSize: 20,
-                        color: Colors.blue,
+                        color: Colors.red[700],
+                        fontWeight: FontWeight.bold,
                       ),
                     ),
                   ],
@@ -112,11 +123,9 @@ class MyApp extends StatelessWidget {
         ),
         backgroundColor: Colors.white,
         body: Column(
-          crossAxisAlignment: CrossAxisAlignment.stretch,
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: <Widget>[
-            SizedBox(
-              height: 40,
-            ),
+
             Container(
               height: 90,
               child: Padding(
@@ -134,9 +143,17 @@ class MyApp extends StatelessWidget {
                 ),
               ),
             ),
-            SizedBox(height: 30),
+
             Center(
               child: Image.asset("images/2.jpg"),
+            ),
+            Center(
+              child: Text("EVEN DEAD I AM THE HERO",style: TextStyle(
+                letterSpacing: 5.5,
+                fontSize: 22,
+                fontWeight: FontWeight.bold,
+                color: Colors.red[700],
+              ),),
             ),
           ],
         ),
