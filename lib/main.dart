@@ -10,6 +10,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
+          backgroundColor: Colors.teal,
           title: Text(
             "IAM POOR",
             style: TextStyle(
@@ -19,6 +20,7 @@ class MyApp extends StatelessWidget {
           ),
         ),
         floatingActionButton: FloatingActionButton(
+          backgroundColor: Colors.teal,
           child: Icon(
             Icons.accessibility,
           ),
@@ -26,6 +28,7 @@ class MyApp extends StatelessWidget {
         ),
         floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
         bottomNavigationBar: BottomNavigationBar(
+
           items: [
             BottomNavigationBarItem(
               icon: Icon(
@@ -40,12 +43,13 @@ class MyApp extends StatelessWidget {
               title: Text("AEROPLANE"),
             ),
           ],
-          backgroundColor: Colors.blue[400],
+          backgroundColor: Colors.teal,
           currentIndex: 0,
           selectedFontSize: 19,
           selectedItemColor: Colors.white,
         ),
         drawer: Drawer(
+
           child: ListView(
             children: <Widget>[
               DrawerHeader(
@@ -59,7 +63,7 @@ class MyApp extends StatelessWidget {
                   ),
                 ),
                 decoration: BoxDecoration(
-                  color: Colors.blue,
+                  color: Colors.teal,
                 ),
               ),
               Padding(
@@ -107,6 +111,8 @@ class MyApp extends StatelessWidget {
             ],
           ),
         ),
+        backgroundColor: Colors.teal[100],
+
       ),
     );
   }
