@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           backgroundColor: Colors.teal,
           title: Text(
-            "IAM POOR",
+            "IAM RICH",
             style: TextStyle(
               letterSpacing: 3,
               fontWeight: FontWeight.bold,
@@ -111,7 +111,7 @@ class MyApp extends StatelessWidget {
             ],
           ),
         ),
-        backgroundColor: Colors.teal[100],
+        backgroundColor: Colors.white,
 
       ),
     );
