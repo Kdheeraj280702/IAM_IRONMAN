@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          backgroundColor: Colors.teal,
+          backgroundColor: Colors.red[500],
           title: Text(
             "IAM RICH",
             style: TextStyle(
@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
           ),
         ),
         floatingActionButton: FloatingActionButton(
-          backgroundColor: Colors.teal,
+          backgroundColor: Colors.red[500],
           child: Icon(
             Icons.accessibility,
           ),
@@ -43,7 +43,7 @@ class MyApp extends StatelessWidget {
               title: Text("AEROPLANE"),
             ),
           ],
-          backgroundColor: Colors.teal,
+          backgroundColor: Colors.red[500],
           currentIndex: 0,
           selectedFontSize: 19,
           selectedItemColor: Colors.white,
@@ -62,7 +62,7 @@ class MyApp extends StatelessWidget {
                   ),
                 ),
                 decoration: BoxDecoration(
-                  color: Colors.teal,
+                  color: Colors.red[500],
                 ),
               ),
               Padding(
@@ -112,30 +112,34 @@ class MyApp extends StatelessWidget {
         ),
         backgroundColor: Colors.white,
         body: Column(
+          crossAxisAlignment: CrossAxisAlignment.stretch,
           children: <Widget>[
-            SizedBox(height:40,),
+            SizedBox(
+              height: 40,
+            ),
             Container(
-
-
-              child: Text(
-                "Iam...IRONMAN",
-                style: TextStyle(
-                  fontStyle: FontStyle.italic,
-                  fontWeight: FontWeight.bold,
-                  letterSpacing: 3,
-                  fontSize: 30,
-                  color: Colors.teal,
+              height: 90,
+              child: Padding(
+                padding: const EdgeInsets.all(12.0),
+                child: Center(
+                  child: Text(
+                    "I'M...IRONMAN",
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      letterSpacing: 4,
+                      fontSize: 40,
+                      color: Colors.red[700],
+                    ),
+                  ),
                 ),
               ),
             ),
-            SizedBox(height: 90),
+            SizedBox(height: 30),
             Center(
-              child: Image.asset("images/1.jpg"),
+              child: Image.asset("images/2.jpg"),
             ),
           ],
-
         ),
-
       ),
     );
   }
