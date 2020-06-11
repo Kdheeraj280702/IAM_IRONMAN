@@ -28,7 +28,6 @@ class MyApp extends StatelessWidget {
         ),
         floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
         bottomNavigationBar: BottomNavigationBar(
-
           items: [
             BottomNavigationBarItem(
               icon: Icon(
@@ -49,7 +48,6 @@ class MyApp extends StatelessWidget {
           selectedItemColor: Colors.white,
         ),
         drawer: Drawer(
-
           child: ListView(
             children: <Widget>[
               DrawerHeader(
@@ -112,7 +110,9 @@ class MyApp extends StatelessWidget {
           ),
         ),
         backgroundColor: Colors.white,
-
+        body: Center(
+          child: Image.asset("images/1.jpg"),
+        ),
       ),
     );
   }
